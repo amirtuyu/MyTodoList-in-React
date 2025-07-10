@@ -1,0 +1,38 @@
+
+.container-add {
+  background-color: rgb(248, 162, 1);
+  width: 100%;
+  padding: 6%;
+  display: flex;
+  flex-flow: column;
+}
+.container-add h2 {
+  text-align: center;
+  display: block;
+  width: 100%;
+  color: white;
+}
+.container-add .container-search {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 2%;
+}
+.container-search input {
+  width: 75%;
+  border: none;
+  padding: 3%;
+  outline: none;
+}
+.container-search .button-Add {
+  border: none;
+  width: 22%;
+  color: gray;
+}
+.container-search button:active {
+  box-shadow: 1px 1px 10px gray;
+}
+.container-search button:hover {
+  background-color: rgb(224, 224, 224);
+  cursor: pointer;
+}

@@ -1,0 +1,17 @@
+.List li {
+  width: 100%;
+  padding: 2.6%;
+  background-color: rgb(231, 231, 231);
+  padding-left: 30px;
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+.List li:hover {
+  background-color: lightgray;
+}
+.List li ::after {
+  content: e872;
+}

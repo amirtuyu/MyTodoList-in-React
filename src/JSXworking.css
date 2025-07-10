@@ -1,0 +1,49 @@
+.icon-Delet {
+  visibility: hidden;
+}
+.icon-Delet:hover {
+  color: red;
+}
+li:hover .icon-Delet {
+  visibility: initial;
+}
+.addtext {
+  position: absolute;
+  right: 8%;
+  visibility: hidden;
+}
+.addtext:hover {
+  color: green;
+}
+li:hover .addtext {
+  visibility: initial;
+}
+.closeAddTextv {
+  position: absolute;
+  right: 8%;
+  visibility: hidden;
+}
+.closeAddTextv:hover {
+  color: red;
+}
+li:hover .closeAddTextv {
+  visibility: initial;
+}
+.textarea {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(231, 252, 252);
+  border: none;
+}
+.buttonChangText {
+  background-color: rgb(231, 252, 252);
+  border: none;
+  padding: 10px;
+  color: rgb(97, 96, 96);
+}
+.buttonChangText:hover {
+  background-color: rgb(193, 245, 245);
+}
+.buttonChangText:active {
+  box-shadow: -1px -1px 60px rgb(77, 197, 197);
+}
