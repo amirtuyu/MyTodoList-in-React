@@ -21,7 +21,7 @@ function App() {
   };
   const Clicked = () => {
     if (targetvalue) {
-      let obj = new ObjCreator(targetvalue, IdCreator(), "");
+      let obj = new ObjCreator(targetvalue, IdCreator(), "", "");
       setArryObj([...arryObj, obj]);
       setTargetvalue("");
     }
@@ -30,15 +30,20 @@ function App() {
     let newarryObj = RemoveItemFromArra(arryObj, idObj);
     setArryObj(newarryObj);
   };
-  const UpdateRipository =(id,value)=>{
-  let newarryObj=ChangeValueToObj(value,id,"Text",arryObj)
-  setArryObj(newarryObj);
-  }
+  const UpdateRipository = (id, value) => {
+    const BirthDate = Math.floor(Date.now() / 1000);
+    let newarryObj = ChangeValueToObj(value, id, "Text", arryObj,'BirthDate',BirthDate);
+    setArryObj(newarryObj);
+  };
   return (
     <>
       <div className="container">
         <InputForm getValue={GetValue} clicked={Clicked} value={targetvalue} />
-        <List arryObj={arryObj} removElement={RemoveElement} updateRipository={UpdateRipository} />
+        <List
+          arryObj={arryObj}
+          removElement={RemoveElement}
+          updateRipository={UpdateRipository}
+        />
       </div>
     </>
   );

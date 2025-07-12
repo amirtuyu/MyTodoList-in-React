@@ -48,6 +48,7 @@ setOpenAndCloseTextarea((prev)=>({...prev,[id]:!prev[id]}))
 setTextForEdit(TextTarget)
 setOpenAndCloseText((prev)=>({...prev,[id]:!prev[id]}))
 }
+
   return (
     <ul className="List">
       {props.arryObj.map((item) => (
@@ -61,7 +62,7 @@ setOpenAndCloseText((prev)=>({...prev,[id]:!prev[id]}))
             }}
           />
         </li>
-        {(item.Text&&<Text getText={GetText} text={item.Text} openAndCloseText={openAndCloseText[item.id]} getTextForEdite={()=>GetTextForEdite(item.id)} updateRipository={()=>props.updateRipository(item.id,"")}/>)}
+        {(item.Text&&<Text date={item.BirthDate} getText={GetText} text={item.Text} openAndCloseText={openAndCloseText[item.id]} getTextForEdite={()=>GetTextForEdite(item.id)} updateRipository={()=>props.updateRipository(item.id,"")}/>)}
         {(openAndCloseTextarea[item.id]&&<TextArea onchangForEdite={OnchangForEdite} value={textForEdit} id={item.id} getText={GetText} handlerText={()=>{HandlerText(item.id)}} updateRipository={()=>props.updateRipository(item.id,text[item.id])}/>)}
         </div>
       ))}

@@ -1,6 +1,7 @@
 import "./JSXworking.css";
 import { motion, AnimatePresence } from "framer-motion";
 import { useEffect, useState } from "react";
+import { BirthDate } from "./working";
 function DeletItem(props) {
   return (
     <span
@@ -71,10 +72,15 @@ function Text(props) {
   useEffect(() => {
     setIsOpen(props.openAndCloseText);
   }, [props.openAndCloseText]);
+  let [date, setDate] = useState(BirthDate(props.date));
+  const DateUpdate = () => {
+    setDate(BirthDate(props.date));
+  };
   return (
     <AnimatePresence>
       {isOpen && (
         <motion.div
+          onMouseEnter={DateUpdate}
           className="Text"
           initial={{ height: 0, opacity: 0 }}
           animate={{ height: "auto", opacity: 1 }}
@@ -85,7 +91,7 @@ function Text(props) {
           }}
         >
           <div className="containerIconEditAndTimer">
-            <div className="Timer">0seconds</div>
+            <div className="Timer">{date}</div>
             <span
               onClick={() => {
                 props.getTextForEdite();
