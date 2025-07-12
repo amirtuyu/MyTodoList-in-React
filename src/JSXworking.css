@@ -47,3 +47,68 @@ li:hover .closeAddTextv {
 .buttonChangText:active {
   box-shadow: -1px -1px 60px rgb(77, 197, 197);
 }
+.addtext:hover {
+  color: green;
+}
+.Icon-animation-Text {
+  position: absolute;
+  right: 8.1%;
+  visibility: hidden;
+  transform: rotate(-90deg);
+  transition: transform 0.3s;
+}
+.Icon-animation-Text:hover {
+  color: green;
+}
+li:hover .Icon-animation-Text {
+  visibility: initial;
+}
+.toggle-icon {
+  transform: rotate(-270deg);
+  transition: all 0.3s;
+}
+.Text {
+  display: block;
+  width: 100%;
+  background-color: rgb(134, 248, 210);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.aktive-icon-Text {
+  transform: rotate(-270deg);
+  transition: all 0.3s;
+}
+.Text .Timer {
+  position: relative;
+  font-size: 15px;
+  color: rgb(87, 84, 84);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  visibility: hidden;
+  margin-top: 0px;
+}
+.Text:hover .Timer {
+  visibility: initial;
+}
+.Text .containerTargetText {
+  font-size: 16px;
+  margin-bottom: 13px;
+  margin-left: 10px;
+}
+.Text .containerIconEditAndTimer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: -1px;
+  margin-top: 3px;
+}
+.Text .show-icon {
+  visibility: hidden;
+  cursor: pointer;
+  font-size: 25px;
+  margin-right: 5px;
+}
+.Text .show-icon:hover{
+  color: green;
+}
+.Text:hover .show-icon {
+  visibility: initial;
+}
