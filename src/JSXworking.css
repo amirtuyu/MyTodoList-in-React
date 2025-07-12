@@ -95,7 +95,7 @@ li:hover .Icon-animation-Text {
   margin-bottom: 13px;
   margin-left: 10px;
   position: relative;
-  top: 5px;
+  top: -2px;
 }
 .Text .containerIconEditAndTimer {
   display: flex;
@@ -110,6 +110,8 @@ li:hover .Icon-animation-Text {
   cursor: pointer;
   font-size: 25px;
   margin-right: 5px;
+  position: relative;
+  top:-2px ;
 }
 .Text .show-icon:hover{
   color: green;
