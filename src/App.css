@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+body{
+  background-color: rgb(17, 15, 15);
+}
 .container {
   margin-top: 100px;
   width: 90%;
